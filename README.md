@@ -11,12 +11,8 @@ smaller and use less ram
 # PACKAGE SYSTEM
 apk alpine package manager
 # FIWI
+
 ip link set lo up
 udhcpc -i eth0
-# or if udhcpc not found:
-# dhcpcd eth0
-# or busybox one:
-# busybox udhcpc -i eth0
-
 ip a
 ping 8.8.8.8
