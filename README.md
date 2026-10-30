@@ -14,7 +14,11 @@ apk alpine package manager
 copy 1-1 to get e1000 eth0 working mostly for myself qemu testing
 
 ip link set eth0 up
+
+
 ip link set lo up
+
+
 udhcpc -i eth0
 
 ip a
