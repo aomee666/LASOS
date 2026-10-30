@@ -13,12 +13,9 @@ apk alpine package manager
 # FIWI
 copy 1-1 to get e1000 eth0 working mostly for myself qemu testing
 
+ip link set eth0 up
 ip link set lo up
 udhcpc -i eth0
-or if udhcpc not found:
-dhcpcd eth0
-or busybox one:
-busybox udhcpc -i eth0
 
 ip a
 ping 8.8.8.8
