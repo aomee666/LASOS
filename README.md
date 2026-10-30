@@ -23,3 +23,17 @@ udhcpc -i eth0
 
 ip a
 ping 8.8.8.8
+# NEOFETCH FIX
+we have neofetch by default it is broken so fix it
+
+mount -t proc none /proc
+
+
+mount -t sysfs none /sys
+
+
+mount -t devtmpfs none /dev
+free -m
+
+
+neofetch
