@@ -10,30 +10,5 @@ anyone is better than them
 smaller and use less ram
 # PACKAGE SYSTEM
 apk alpine package manager
-# FIWI
-copy 1-1 to get e1000 eth0 working mostly for myself qemu testing
-
-ip link set eth0 up
-
-
-ip link set lo up
-
-
-udhcpc -i eth0
-
-ip a
-ping 8.8.8.8
-# NEOFETCH FIX
-we have neofetch by default it is broken so fix it
-
-mount -t proc none /proc
-
-
-mount -t sysfs none /sys
-
-
-mount -t devtmpfs none /dev
-free -m
-
-
-neofetch
+# FIX
+run fix.sh
